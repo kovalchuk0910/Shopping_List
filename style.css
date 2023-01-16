@@ -1,0 +1,109 @@
+@font-face {
+    font-family: MinecraftFont;
+    src: url('fonts/MinecraftRegular-Bmg3.otf');
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background.jpg);
+    backdrop-filter: blur(3px);
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'MinecraftFont';
+}
+
+.mainContainer {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    border: 1px solid rgb(165, 165, 165);
+}
+
+.addTaskInput {
+    outline: none;
+    font-family: 'MinecraftFont';
+    font-size: 17px;
+}
+
+#addTaskBtn {
+    background-color: rgb(152, 228, 38);
+    border: none;
+    border-bottom: 4.5px solid rgb(123, 180, 37);
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    font-family: 'MinecraftFont';
+}
+
+#addTaskBtn:hover {
+    background-color: rgb(177, 255, 59);
+    border-bottom: 4.5px solid rgb(138, 202, 43);
+}
+
+.enterBlock {
+    display: flex;
+    justify-content: space-around;
+    width: 270px;
+}
+
+.newData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+}
+
+#title {
+    color: white;
+}
+
+.tasksTitle {
+    color: rgb(177, 255, 59);
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.todo-item.checked {
+    background-color: rgba(144, 144, 144, 0.559);
+    opacity: 0.5;
+}
+
+.todo-button {
+    background-color: rgb(255, 87, 65);
+    border: none;
+    border-bottom: 4px solid rgb(182, 62, 46);
+    padding: 5px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.todo-button:hover {
+    background-color: rgb(251, 114, 96);
+    border-bottom: 4px solid rgb(182, 88, 76);
+}
+.todo-button img {
+    width: 20px;
+}
+
+.todo-desc {
+    font-size: 19px;
+    color: white;
+}
+
+.todo-checkbox {
+    margin-left: 20px;
+}
+.todo-button {
+    margin-right: 20px;
+}
